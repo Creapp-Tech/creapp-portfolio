@@ -17,7 +17,7 @@ export default function ServiceCategory({
     children,
 }: ServiceCategoryProps) {
     return (
-        <section className="py-16">
+        <section className="py-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Category Header */}
                 <motion.div
@@ -25,7 +25,7 @@ export default function ServiceCategory({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-12"
+                    className="text-center mb-8"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
                         <span className="text-4xl">{icon}</span>

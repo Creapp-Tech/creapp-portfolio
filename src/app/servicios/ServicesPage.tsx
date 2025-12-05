@@ -10,11 +10,11 @@ export default function ServicesPage() {
     return (
         <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 overflow-x-hidden">
             {/* Animated Background */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 overflow-hidden">
                 <motion.div
                     animate={{
                         opacity: [0.3, 0.5, 0.3],
-                        scale: [1, 1.1, 1],
+                        scale: [1, 1.05, 1],
                     }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-3xl"
@@ -22,7 +22,7 @@ export default function ServicesPage() {
                 <motion.div
                     animate={{
                         opacity: [0.2, 0.4, 0.2],
-                        scale: [1, 1.2, 1],
+                        scale: [1, 1.05, 1],
                     }}
                     transition={{
                         duration: 10,
@@ -40,7 +40,7 @@ export default function ServicesPage() {
             {/* Content */}
             <div className="relative z-10">
                 {/* Hero Section */}
-                <section className="pt-32 pb-16">
+                <section className="pt-24 pb-12">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                 </section>
 
                 {/* Services Sections */}
-                <div id="servicios" className="space-y-8">
+                <div id="servicios" className="space-y-4">
                     {/* Automatización & Productividad */}
                     <ServiceCategory
                         title="Automatización & Productividad"
@@ -422,7 +422,7 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Why Choose Us */}
-                <section className="py-16">
+                <section className="py-8">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -488,7 +488,7 @@ export default function ServicesPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16">
+                <section className="py-8">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
